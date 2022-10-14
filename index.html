@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div><button>添加li</button></div>
+  <script src="./resolve/debounce.js"></script>
+  <script src="./resolve/throttle.js"></script>
+  <script>
+    var btn = document.querySelector('button')
+    btn.addEventListener("click",debounce(function () {
+      console.log(this);
+    }, 500, false))
+  </script>
+</body>
+
+</html>
